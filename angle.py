@@ -13,23 +13,26 @@ parser.add_argument('-a', '--axis', type=int,
 parse = parser.parse_args()
 
 
-def main(coordinate=parse.coordinate, axis=parse.axis, api=False):
+def main(coordinate=parse.coordinate, axis=parse.axis, module=False):
     """Calculating vector's angle w.r.t. given axis
 
     :param coordinate:
     :param axis: Axis index of the angle you want to calculate, beginning at `0`
-    :param api: `True` if using for other program
+    :param module: `True` if using for other program
     :return: Angle (Union: degree)
     """
+
     if len(coordinate) != 3:
         return None
 
     sum = 0
+
     for coor in coordinate:
        sum += float(coor) ** 2
 
     angle = np.arccos(float(coordinate[axis]) / (sum ** 0.5))
-    if not api:
+
+    if not module:
         print(angle * 180 / np.pi)
     else:
         return angle * 180 / np.pi

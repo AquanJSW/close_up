@@ -1,11 +1,9 @@
 """Extract CAHV camera model from .LBL files"""
 
 import re
-import os
 
 MODEL_COMPONENT = ('C', 'A', 'H', 'V', 'O', 'R', 'E', 'P')
 MODEL = dict()
-
 PATH = 'D:\\Datasets\\labels\\0078ML0005760710102736E01_XXXX.LBL'
 
 
@@ -15,6 +13,7 @@ def main(path=PATH):
     :param path: `lbl` file's path
     :return: dict of camera model
     """
+
     with open(path, 'r') as file:
         txt = file.read()
 
