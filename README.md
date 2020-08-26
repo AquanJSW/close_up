@@ -1,1 +1,1 @@
-# Classify MSL's images of MASTCAM based on vertical shooting angle
+# Classify MSL's MASTCAM images based on vertical shooting angle
