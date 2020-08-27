@@ -1,1 +1,3 @@
-ÿþ
+"""hello"""
+
+from .myfunc import *

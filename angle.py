@@ -5,7 +5,7 @@ import numpy as np
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('-c', '--coordinate', nargs='*', default=[8.922185e-01, -4.472015e-01, 6.276329e-02])
+parser.add_argument('-c', '--coordinate', nargs='*', default=[-2.978715e-01, 9.506773e-01,8.641501e-02])
 parser.add_argument('-a', '--axis', type=int,
                     help="axis index of the angle you want to calculate, beginning at `0`",
                     default=2)
